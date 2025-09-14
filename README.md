@@ -22,7 +22,7 @@ The live character counter should appear as shown below:
 
 ## How to Run
 1. Download or clone this repository  
-2. Open `index.html` in any modern web browser  
+2. Open `practice1.html` in any modern web browser  
 3. Start typing in the textarea and observe the live character counter update instantly  
 
 ## Learning Outcomes
