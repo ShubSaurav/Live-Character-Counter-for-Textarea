@@ -1,51 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Character Counter</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    textarea {
-      width: 400px;
-      height: 150px;
-      font-size: 16px;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      outline: none;
-    }
-    textarea:focus {
-      border-color: #007BFF;
-      box-shadow: 0 0 4px rgba(0,123,255,0.4);
-    }
-    .counter {
-      margin-top: 8px;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
+# Live Character Counter
 
-  <h2>Live Character Counter</h2>
-  <textarea id="textInput" placeholder="Type your text here..."></textarea>
-  <div class="counter">Characters: <span id="charCount">0</span></div>
+## Objective
+A simple web-based feature that displays a live character count as the user types in a textarea. This helps improve user interaction by providing instant feedback on the number of characters typed.
 
-  <script>
-    const textarea = document.getElementById("textInput");
-    const charCount = document.getElementById("charCount");
+## Features
+- Real-time character counting as the user types or deletes
+- Clean and minimal user interface
+- Instant feedback without requiring a page reload
+- Demonstrates event handling and dynamic content updates using JavaScript
 
-    textarea.addEventListener("input", () => {
-      charCount.textContent = textarea.value.length;
-    });
-  </script>
+## Technologies Used
+- HTML  
+- CSS  
+- JavaScript  
 
-</body>
-</html>
+
+## Expected Output
+The live character counter should appear as shown below:
+
+![Expected Output](Screenshot%202025-09-14%20233124.png)
+
+## How to Run
+1. Download or clone this repository  
+2. Open `index.html` in any modern web browser  
+3. Start typing in the textarea and observe the live character counter update instantly  
+
+## Learning Outcomes
+- DOM selection and event handling with the `input` event  
+- Dynamically updating text content using JavaScript  
+- Creating interactive UI components with minimal code  
+
